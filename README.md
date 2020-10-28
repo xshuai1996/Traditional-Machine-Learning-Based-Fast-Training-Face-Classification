@@ -44,10 +44,10 @@ We can expect better performance if applying a better segmentation approach. For
 
 # Future Work
 
-Though the paper did not mention specifically, the segmentation step is extremely important. The reason behind is, the [Saab transform] simply maximizes the variance of new features but is incapable to somehow form a mask or assign weights to discard background, which means whether a local cuboid is background or not it will be inevitably involved to form higher level features, and furthur put negative impact on the quality of high level features. From another angle, since both objects and background are compressed with same ratio in feature extraction, it wastes information to store background, which means useful features of objects might be lost. However, since background can't be distinguised in low level, it is challenging to obtain a "mask" in no-backward pass architecture, and the solution is still under development.
+Though the paper did not mention specifically, the segmentation step is extremely important. The reason behind is, the [*Saab transform*] simply maximizes the variance of new features but is incapable to somehow form a mask or assign weights to discard background, which means whether a local cuboid is background or not it will be inevitably involved to form higher level features, and furthur put negative impact on the quality of high level features. From another angle, since both objects and background are compressed with same ratio in feature extraction, it wastes information to store background, which means useful features of objects might be lost. However, since background can't be distinguised in low level, it is challenging to obtain a "mask" in no-backward pass architecture, and the solution is still under development.
 
 [*An Interpretable Compression and Classification System: Theory and Applications*]: <https://arxiv.org/abs/1907.08952>
 [*Interpretable Convolutional Neural Networks via Feedforward Design*]: <https://arxiv.org/abs/1810.02786>
 [*Face Parsing*]: <https://github.com/zllrunning/face-parsing.PyTorch>
 [*Labeled Faces in the Wild (LFW)*]: <http://vis-www.cs.umass.edu/lfw/>
-[Saab transform]: <https://arxiv.org/abs/1810.02786>
+[*Saab transform*]: <https://arxiv.org/abs/1810.02786>
