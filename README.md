@@ -1,5 +1,5 @@
 # Traditional Machine Learning Based Fast-Training Face Classification
----
+ 
 This work is an unofficial implementation of the paper [*An Interpretable Compression and Classification System: Theory and Applications*], which includes the following steps:
   1. Preprocessing (adjustable): Detect and crop the face, blacken the blackground, horizontal flip to augment the dataset, separate three color channels and equalize histogram individually.
   2. Feature extraction*: Seperate the image to local cuboids and run PCA for local cuboids in the same position of all images. This step will be executed until the shape of global cuboid goes to 1x1xC. This module is linear and inversable as a method of compression.
@@ -9,7 +9,7 @@ uses [*Saab transform*] for dimension reduction of local features. Based on an o
  *: Check [*Interpretable Convolutional Neural Networks via Feedforward Design*] for more mathematical explanation. 
  
 ## Examples of preprocessing results
-![image](https://miro.medium.com/max/473/1*DRp-KBTfpprKXgIzetMxhA.png)
+![image](https://raw.githubusercontent.com/xshuai1996/Traditional-Machine-Learning-Based-Fast-Training-Face-Classification/master/preprocessing_examples/14_4.jpg) ![image](https://raw.githubusercontent.com/xshuai1996/Traditional-Machine-Learning-Based-Fast-Training-Face-Classification/master/preprocessing_examples/15_6.jpg) ![image](https://raw.githubusercontent.com/xshuai1996/Traditional-Machine-Learning-Based-Fast-Training-Face-Classification/master/preprocessing_examples/16_0.jpg) ![image](https://raw.githubusercontent.com/xshuai1996/Traditional-Machine-Learning-Based-Fast-Training-Face-Classification/master/preprocessing_examples/20_3.jpg) ![image](https://raw.githubusercontent.com/xshuai1996/Traditional-Machine-Learning-Based-Fast-Training-Face-Classification/master/preprocessing_examples/21_0.jpg)
 
 
 Since in this work the face segementation method is different with the paper ([*Face Parsing*] here), the accuracy is a little bit lower than the result presented in the paper.
